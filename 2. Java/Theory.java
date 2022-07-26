@@ -525,6 +525,71 @@ public class Theory {
 		 * 구현객체/구현클래스
 		 * 	인터페이스에서 정의된 실체 메소드를 가지고 있다. 
 		 * 	구현클래스 선언부에 extends 대신에 implements 키워드를 추가하고 인터페이스 이름을 명시하면 된다.
+		 		 
+
+
+
+
+
+
+		 
+		 * =====	Day 15. 07.26. Wrapper 클래스 		======
+		 
+		 * 기본타입 - 포장클래스
+		 * 	자바는 기본타입의 값을 갖는 객체를 생성할수 있다. 이러한 객체를 포장객체라고 한다.
+		 * 	byte - Byte
+		 * 	char - Character
+		 * 	short - Short
+		 * 	int - Integer
+		 * 	long - Long
+		 * 	float - Float
+		 * 	double - Double
+		 * 	boolean - Boolean
+	
+		 * 박싱
+		 * 	Byte obj = new Byte(10);
+		 * 	Integer obj = new Integer(1000);
+		 * 언박싱
+		 * 	박싱된 포장객체에서 다시 기본타입의 값을 얻어내기 위해 기본타입이름 + Value() 메소드를 호출하면된다.
+		 * 	byte num = obj.byteValue();
+		 * 	iint num = obj.intValue();
+		 
+		 * 자동박싱
+		 * 	기본타입의 값을 직접 박싱하지 않아도 자동박싱이 일어난다.
+		 * 	Integer obj = 100; (자동박싱)
+		 * 자동언박싱
+		 * 	wrapper클래스 객체에서 직접 언박싱하지 않아도 자동언박싱이 일어난다.
+		 * 	Integer obj = new Integer(200);
+		 * 	int value1 = obj;
+		 * 
+		 * wrapper클래스를 사용하는 이유
+		 *  - 매개변수로 객체가 요구되는경우
+			- 기본형이 아닌 객체로 저장해야 하는 경우
+			- 객체간의 비교가 필요한 경우
+			- 문자열을 기본값으로 변환하는 경우 등
+			- 자바 Collection 인터페이스는 객체만 취급하기 때문에 기본값을 객체로 사용해야 하는 경우가 있다.
+		 
+		 * String
+		 * 	문자열 리터럴은 "" 이다. 문자열은 String 객체로 생성되고 변수는 String 객체를 참조한다.
+		 * 	보통 문자열 리터럴을 사용하지만, new 연산자를 사용해서 직접 String 객체를 생성시킬 수도 있다.
+		 * 	동일한 String객체건 다른 String객체건 상관없이 내부 문자열이 같은지 비교하고 싶을때는 equals()메소드를 사용한다.
+		 *  원본문자열변수.equals(비교문자열변수);
+		  
+		 * 문자열을 기본타입으로 변환
+		 * String = "10"
+		 * String -> int
+		 * 	int value = Integer.parseInt(str);
+		 * String -> double
+		 * 	String = "10.1";
+		 * 	double value = Double.parseDouble(str);
+		 
+		 * String 클래스(생성자)
+		 
+		 * String 메소드
+		 * =중요=
+		 
+		 * // 자바 api 문서
+			// http://docs.oracle.com/javase/8/docs/api/
 		
 		
 		
