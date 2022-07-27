@@ -13,7 +13,7 @@ class Person{
 		this.SSN = ssn;
 	}
 	
-	
+	// 데이터를 비교해서 같으면 true 아니면 false 가 나오도록 재정의해준다.
 	@Override
 	public boolean equals(Object obj) {
 		if(obj instanceof Person) {
@@ -25,11 +25,21 @@ class Person{
 		}
 	}
 	
+	
+	// 데이터가 같을 경우 같은 hashCode(정수값)을 반환하도록 재정의해준다.
 	@Override
 	public int hashCode() {
 		String hashCode = (name + age + SSN);
 		return hashCode.hashCode();
 	}
+	
+		
+	// 가치있는 정보로 재정의 해준다.
+	@Override
+	public String toString() {
+		return "이름 : "+name+"\n나이 : "+age+"\n주민번호 : "+SSN;
+	}
+	
 	
 }
 
