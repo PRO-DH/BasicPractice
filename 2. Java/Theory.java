@@ -681,7 +681,33 @@ public class Theory {
 		 * 	제네릭 타입을 사용하지 않으면 Object타입 사용 -> 빈번한 타입변환 발생 -> 프로그램 성능 저하
 		 * 	제네릭 타입을 사용한 경우 프로그램 성능저하를 유발하는 캐스팅을 제거하고 컴파일시 타입오류를 체크하여 사전에 엄격한 데이터타입 체크를 가능케한다.(타입의안정성)
 		
-		
+				
+
+
+
+
+
+		 
+		 * =====	Day 18. 07.29. collection framework 		======
+		 
+		 * Collection - 여러객체를 모아놓은 것
+		 * Framework - 표준화 정형화된 체계적인 프로그래밍 방식
+		 * Collection Framework 
+		 * 	- 여러객체를 다루기위한 표준화된 방식
+		 * Iterator(반복자)
+		 * 	list set 에서 구현 ( Map에는 없음) - hasNext(), next(), remove()
+		 * 	사용 예시 - 
+		 * 		while(itr.hasNext()){
+		 * 			String str = itr.next();
+		 * 		}
+		 
+		 * 	list, set, map
+		 * 		list - 순서가 있고 중복이 허용된다
+		 * 			배열과 비슷하게 객체를 인덱스로 관리한다. 배열과 다른점은 배열은 길이가 정해져있지만 list는 저장용량이 자동으로 증가하며 자동인덱스가 부여된다.
+		 * 			향상된 for문 사용가능. 
+		 * 			List<E> list = new ArrayList<E>();
+		 * 		set - 순서가 없고 중복이 안된다
+		 * 		map - 순서가 없고 중복은 key 는 x value 는 o
 		
 		
 		 * 
