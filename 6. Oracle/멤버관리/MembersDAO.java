@@ -170,9 +170,9 @@ public class MembersDAO {
 				String dbPw = rs.getString("pw");
 				
 				if(pw.equals(dbPw)) {
-					result = 0;
+					result = 1;
 				}else {
-					result = -1;
+					result = 0;
 				}
 			}else {
 				result = -1;				
