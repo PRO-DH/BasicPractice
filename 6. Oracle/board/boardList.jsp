@@ -8,6 +8,7 @@
 	<%
 		BoardDAO dao = BoardDAO.getInstance();
 		ArrayList<BoardDTO> list = dao.boardList();
+		request.setAttribute("list", list);
 	%>
 <!DOCTYPE html>
 <html>
@@ -26,6 +27,8 @@
 			<th>작성일</th>
 			<th>조회수</th>
 		</tr>
+		
+		
 		<c:forEach var="dto" items="${list }">
 			<tr>
 				<td>${dto.bId }</td>
@@ -33,14 +36,13 @@
 				<td>
 					<a href="contentView.jsp?bId=${dto.bId }">${dto.bTitle }</a>
 				</td>
-				<td>${dto.bTitle }</td>
 				<td>${dto.bDate }</td>
 				<td>${dto.bHit }</td>
 			</tr>
 		</c:forEach>
 		<tr>
 			<td colspan="5">
-				<a href="writeForm.jsp">글 작 성</a>
+				<a href="writeForm.jsp" style="text-align: center">글 작 성</a>
 			</td>
 		</tr>
 	</table>
