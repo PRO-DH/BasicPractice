@@ -20,7 +20,6 @@ public class BoardDAO {
 			ds = (DataSource)context.lookup("java:comp/env/jdbc/oracle");
 			}catch(Exception e) {
 				e.printStackTrace();
-				
 			}
 	}
 	
@@ -66,6 +65,9 @@ public class BoardDAO {
 	}
 	
 	
+	
+	
+	
 	// 게시판 목록을 만들기 위한 메서드
 	public ArrayList<BoardDTO> boardList(){
 		ArrayList<BoardDTO> list = new ArrayList<BoardDTO>();
@@ -105,7 +107,7 @@ public class BoardDAO {
 	// 글 작성 후 데이터를 받아 DB에 데이터를 넣는 메소드
 	public int write(String bName, String bTitle, String bContent) {
 		int result = 0;
-		String query = "insert into board(bId, bName, bContent)"
+		String query = "insert into board(bId, bName, bTitle, bContent)"
 				+ " values(board_seq.nextval, ?, ?, ?)";
 		
 		try {
