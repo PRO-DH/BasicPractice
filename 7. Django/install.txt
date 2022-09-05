@@ -1,0 +1,32 @@
+1. 가상환경 설치(myweb 폴더에)
+python -m venv myweb
+
+
+2. 가상환경 활성화 명령
+C:\myweb\Scripts\activate
+
+
+3. 장고 프로젝트 폴더는 myweb 안에 생성
+myweb 로 경로 이동 후!!
+새폴더 만들기!
+
+
+4. 시스템 명령어를 하나 설정
+c:\myweb\Scripts\activate 을 myw.cmd 파일로 만든 뒤, 원하는 경로에 넣습니다.
+c:\myweb  에 저장
+sysdm.cpl 에 들어가서 [고급] - [환경변수] 에서 c:\myweb 를 path 로 추가
+
+
+5. 폴더 안에서 code로 열기로 VScode 를 열어주세요.
+   새터미널에서 하단에 Terminal 을 Command Prompt로 세팅
+   pip install django   (장고 설치)
+   pip list   (설치 확인용)
+
+
+6. 장고 프로젝트 시작
+   myw 를 입력
+   django-admin startproject config . 
+
+7. 서버구동
+   python manage.py runserver  
+
