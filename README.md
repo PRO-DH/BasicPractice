@@ -19,3 +19,6 @@
 
 ### 6. Oracle
 - Oracle DB의 기본적인 함수 및, SQL과 JSP를 연동하여 다양한 웹페이지 제작 실습
+
+### 7. Django
+- Python Framework Django의 이론
