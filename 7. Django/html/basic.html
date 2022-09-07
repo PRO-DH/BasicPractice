@@ -1,0 +1,291 @@
+<html>
+    <head>
+        <title>HTML 연습</title>
+    </head>
+    <body>
+
+        <!-- html 은 head section 과 body section 으로 나눌수 있다!!<br>
+        head section HTML 문서에 대한 정보 (메타데이터)<br>
+        body section 본문 내용을 기입<br>
+        HTML 에서는 두 개 이상의 공백, 줄바꿈은 하나의 공백으로 대체 -->
+
+        HTML 태그는 블록태그와 인라인태그로 나눌 수 있다!! <br>
+        블록태그는 <mark>한줄전체차지</mark> <br>
+        인라인태그는 <mark>내용만큼차지</mark> <br>
+
+        <hr>
+            <h1>BLOCK TAGS</h1>
+        <hr>
+
+        <br><br>
+        <hr>
+            <h3>🎉H Tag</h3>
+        <hr>
+        <div>heading Tag , 뉴스헤드라인생각하면됨!</div>
+        <h1>안녕1</h1>
+        <h2>안녕2</h2>
+        <h3>안녕3</h3>
+        <h4>안녕4</h4>
+        <h5>안녕5</h5>
+        <h6>안녕6</h6>
+
+
+        <br><br>
+        <hr>
+            <h3>🎉div Tag</h3>
+        <hr>
+        <div>레이아웃을 잡아줌, 엄청많이 쓰임</div>
+        <div class="red">여기는 빨간색</div>
+        <div class="blue">여기는 파란색</div>
+
+
+        <br><br>
+        <hr>
+            <h3>list Tag</h3>
+        <hr>
+        <div>
+            순서있는리스트(ordered list)<br>
+            순서없는리스트(unordered list)<br>
+            li 라는 하위태그를 가진다!
+        </div>
+
+        <br><br>
+        <b>먹고싶은 음식 TOP3</b>
+        <ol>
+            <li>돼지고기 김치찌개</li>
+            <li>고등어 김치찌개</li>
+            <li>김치찜</li>
+        </ol>
+
+        <br><br>
+        <b>김치찌개의 종류</b>
+        <ul>
+            <li>돼지고기 김치찌개</li>
+            <li>고등어 김치찌개</li>
+            <li>꽁치 김치찌개</li>
+        </ul>
+
+        <br><br>
+        <hr>
+            <h3>p Tag</h3>
+        <hr>
+        <div>
+            문단을 나타냄
+        </div>
+        <p>문단1</p>
+        <p>문단2</p>
+
+
+        <br><br>
+        <hr>
+            <h3>🎉table Tag</h3>
+        <hr>
+        <div>
+            테이블을 나타냄 <br>
+            table 의 하위태그 : tr <br>
+            tr 의 하위태그 : th, td 
+        </div>
+
+        <br><br>
+        <table border="1">
+            <tr>
+                <th colspan="5">강사소개표</th>
+            </tr>
+            <tr>
+                <th>순번</th>
+                <th>이름</th>
+                <th>나이</th>
+                <th>과목</th>
+                <th>전화번호</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Han</td>
+                <td>36</td>
+                <td>python, django</td>
+                <td rowspan="2">안알랴줌</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Yang</td>
+                <td>38</td>
+                <td>java, jsp</td>
+            </tr>
+        </table>
+
+        <br><br>
+        <table border="1">
+            <tr>
+                <th colspan="6">한달시간표</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>mon</th>
+                <th>tue</th>
+                <th>wed</th>
+                <th>thu</th>
+                <th>fri</th>
+            </tr>
+            <tr>
+                <td>1교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">python</td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td></td>
+                <td rowspan="3">django</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3교시</td>
+                <td></td>
+                <td rowspan="2">network</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+
+        <br><br><br>
+        <hr>
+            <h1>INLINE TAGS</h1>
+        <hr>
+        
+        <br><br>
+        <hr>
+            <h3>🎉button Tag</h3>
+        <hr>
+        <div>자바스크립트랑 연결이 자주된다</div><br>
+        <button onclick="hello()">버튼1</button>
+        <button>버튼2</button>
+
+        <script>
+            // javascript 쓰는곳~!
+            function hello(){
+                alert(1);
+            }
+        </script>
+
+
+
+        <br><br>
+        <hr>
+            <h3>🎉img Tag</h3>
+        <hr>
+        <div>
+            src 라는 필수속성을 가짐 (출처)<br>
+            width (가로) height (세로) title (사진설명)
+        </div>
+        <img width="200px" title="맛있겠쥬?" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20151208_65%2Fbswya_1449556294620hsFDv_GIF%2F%25BF%25F2%25C2%25A91.gif&type=sc960_832_gif">
+        <img src="삼겹.gif" width="200px">
+
+        <br><br>
+        <hr>
+            <h3>🎉a Tag</h3>
+        <hr>
+        <div>
+            href 라는 필수속성을 가짐<br>
+            target : _self(현재창), _blank(새창)
+        </div>
+        <a href="https://www.naver.com" target="_blank">네이버</a>
+        <a href="https://www.naver.com" target="_blank"><button>네이버</button></a>
+        <a href="https://www.naver.com" target="_blank"><img src="삼겹.gif" width="200px"></a>
+        
+        <br><br>
+        <hr>
+            <h3>span Tag</h3>
+        <hr>
+        <div>레이아웃을 지정할 때 사용</div>
+        <span class="red">여기는 빨간색</span>
+        <span class="blue">여기는 파란색</span>
+
+        <br><br>
+        <hr>
+            <h3>🎉textarea Tag</h3>
+        <hr>
+        <div>
+            긴글입력 받을 시 사용<br>
+            rows, cols (세로 가로 폭) disabled (비활성화) placeholder (안내)
+        </div>
+        <textarea rows="5" cols="80" disabled>기본값!!</textarea><br><br>
+        <textarea placeholder="글을 입력하세요"></textarea>
+
+        <br><br>
+        <hr>
+            <h3>select Tag</h3>
+        <hr>
+        <div>
+            항목 선택 시<br>
+            option 이라는 하위태그를 가집니다
+        </div>
+        <br><br>
+        <select>
+            <option>제목</option>
+            <option>작성자</option>
+            <option>내용</option>
+        </select>
+
+        <br><br>
+        <hr>
+            <h3>🎉🎉🎉🎉input Tag</h3>
+        <hr>
+        <div>
+            사용자에게 입력받을 때 사용
+        </div>
+        <input type="text"><br><br>
+        <input type="password"><br><br>
+        <input type="file"><br><br>
+        <input type="number"><br><br>
+        <input type="range"><br><br>
+        <input type="radio"><br><br>
+        <input type="checkbox"><br><br>
+        <input type="color"><br><br>
+        <input type="week"><br><br>
+        
+        <style>
+            /* css 문법 쓰는곳 */
+            h1 {
+                color : brown;
+                background-color: beige;
+            }
+            h3 {
+                text-align: center;
+                font-weight: bolder;
+            }
+            .red{
+                color:red;
+                font-size :20px;
+            }
+            .blue{
+                color:blue;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            a {
+                text-decoration: none;
+                color : black;
+            }
+            a:hover{
+                font-weight: bold;
+                color : red;
+            }
+            img:hover{
+                opacity: 0.4;
+            }
+        </style>
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>
