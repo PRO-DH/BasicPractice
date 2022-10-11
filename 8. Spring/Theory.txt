@@ -7,3 +7,7 @@ src/test/resources - 서버에 구동되지 않는 test
 JRE - 기본 라이브러리
 MAVAN - jstl 등
 src - 계층구조로 보여준다.
+
+
+pom.xml 을 수정하여 버전 맞추기
+버전 맞춘 이후에는 Maven Update(alt+f5)하기
