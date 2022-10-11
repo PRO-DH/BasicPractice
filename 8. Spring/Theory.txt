@@ -11,3 +11,29 @@ src - 계층구조로 보여준다.
 
 pom.xml 을 수정하여 버전 맞추기
 버전 맞춘 이후에는 Maven Update(alt+f5)하기
+
+
+
+
+한글처리 하는 법 
+src/ main / webapp / WEB-INF / web.xml에서
+가장 아래에 필터 복사붙여넣기.
+<filter>
+   <filter-name>encodingFilter</filter-name>
+   <filter-class>
+      org.springframework.web.filter.CharacterEncodingFilter     
+   </filter-class>
+   <init-param>
+      <param-name>encoding</param-name>   
+      <param-value>UTF-8</param-value>
+   </init-param>
+   <init-param>
+      <param-name>forceEncoding</param-name>  
+      <param-value>true</param-value>
+   </init-param>
+</filter>    
+<filter-mapping>
+   <filter-name>encodingFilter</filter-name>
+   <url-pattern>/*</url-pattern>                 
+</filter-mapping> 
+
